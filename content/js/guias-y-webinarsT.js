@@ -113,7 +113,7 @@ for (let pais = 0; pais < optionsPais.length; pais++) {
 };
 for (let guia = 0; guia < guias.length; guia++) {
   contenedorGuias.innerHTML += `
-    <button class="guia">
+    <button id="abrirModalGuia" class="guia">
       <div class="imagenGuia" style="background-image:url('${guias[guia]['fondo']}')">
         <p>${guias[guia]['nombre']}</p>
       </div>
@@ -139,7 +139,6 @@ for (let webinar = 0; webinar < webinars.length; webinar++) {
     </div>
   `;
 }
-
 for (let banner = 0; banner < banners.length; banner++) {
   sliderBanner.innerHTML += `
     <div class="slide">
@@ -168,7 +167,7 @@ $(document).ready(function () {
     responsive: [
       { breakpoint: 1080, settings: { slidesToShow: 4, centerMode: !1, slidesToScroll: 1, variableWidth: !1 } },
       { breakpoint: 320, settings: { slidesToShow: 1.25, centerMode: !1, slidesToScroll: 1, variableWidth: !1 } },
-  ],
+    ],
   });
 });
 $(document).ready(function () {
@@ -197,4 +196,32 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('.js-example-basic-single').select2();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modalGuia = document.getElementById('modalGuia');
+  const abrirModalGuia = document.getElementById('abrirModalGuia');
+  const cerrarModalBtn = document.querySelector("#modalGuia .cerrar");
+
+  function abrirModal() {
+    console.log("Abrir");
+    modalGuia.style.display = "flex";
+  }
+
+  function cerrarModal() {
+    modalGuia.style.display = "none";
+  }
+
+  if (abrirModalGuia && cerrarModalBtn && modalGuia) {
+    abrirModalGuia.addEventListener('click', abrirModal);
+    cerrarModalBtn.addEventListener('click', cerrarModal);
+
+    window.addEventListener('click', function (event) {
+      if (event.target == modalGuia) {
+        cerrarModal();
+      }
+    });
+  } else {
+    console.error("No se pudo encontrar uno o más elementos necesarios para el modal.");
+  }
 });

@@ -1,9 +1,12 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Raleway", sans-serif;
 }
 
 h2 {
@@ -147,6 +150,10 @@ p,
     background-image: url("../img/shared/icons/icon-webinar.png");
     width: 15vw;
     height: 15vw;
+}
+
+.arrows-webinar {
+    display: none !important;
 }
 
 .iconoPlayEventos {
@@ -295,46 +302,39 @@ p,
 
 /* Estilos para el modal */
 .modalGuia {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modalGuiaContenido {
-    width: 80%;
-    position: relative;
-    background-color: #fefefe;
-    border: 1px solid #888;
-    margin: 20% auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
     padding: 20px;
 }
 
 .embedGuia {
-    width: 35%;
-    height: 700px;
-    position: absolute;
-    top: 0;
-    left: 35%;
+    width: 100%;
+    height: 450px;
 }
 
 .cerrar {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    align-self: flex-end;
 }
 
-.cerrar:hover,
-.cerrar:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.cerrar img{
+    width: 48px;
+    height: 48px;
 }
 
 /* Banner */
@@ -413,6 +413,11 @@ p,
         width: 12vw;
         height: 12vw;
     }
+
+    .embedGuia {
+        width: 100%;
+        height: 500px;
+    }
 }
 
 @media only screen and (min-width: 480px) {
@@ -465,6 +470,11 @@ p,
 
     .cardWebinar {
         margin: 0 1.5vw !important;
+    }
+
+    .embedGuia {
+        width: 75% !important;
+        height: 600px;
     }
 }
 
@@ -641,6 +651,10 @@ p,
     .btnWebinar {
         font-size: 1.2rem;
     }
+    
+    .headerWebinars{
+        gap: 1vw;
+    }
 
     .contenidoCardWebinar p,
     .verGuia p {
@@ -695,6 +709,11 @@ p,
 
     .slick-dots {
         bottom: -5vw !important;
+    }
+
+    .embedGuia {
+        width: 65% !important;
+        height: 775px;
     }
 }
 
@@ -790,6 +809,7 @@ p,
     }
 
     .subtituloWebinars {
+        width: 72.5%;
         align-self: flex-start;
         font-size: 1.5rem;
     }
@@ -813,7 +833,6 @@ p,
     }
 
     .headerWebinars {
-        gap: 2vw;
         padding-bottom: 0;
     }
 
@@ -853,6 +872,7 @@ p,
     }
 
     .arrows-webinar {
+        display: block !important;
         height: 48px !important;
         width: 48px !important;
         position: absolute;
@@ -942,7 +962,7 @@ p,
     }
 
     .btnVerMas {
-        display: none;
+        padding: 1.5vw 5vw;
     }
 
     .seccionBanner {
@@ -977,6 +997,19 @@ p,
     .slick-dots li button {
         width: 1vw !important;
         height: 1vw !important;
+    }
+
+    .modalGuiaContenido{
+        flex-direction: row-reverse;
+    }
+
+    .cerrar{
+        align-self: flex-start;
+    }
+
+    .embedGuia {
+        width: 55% !important;
+        height: 800px;
     }
 }
 
@@ -1053,6 +1086,11 @@ p,
     .guia {
         width: 20% !important;
     }
+
+    .embedGuia {
+        width: 50% !important;
+        height: 850px;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -1091,10 +1129,6 @@ p,
         font-size: 1.25rem;
     }
 
-    .tituloGuias {
-        font-size: 2.5rem;
-    }
-
     p {
         font-size: 1.45rem;
     }
@@ -1116,6 +1150,19 @@ p,
     .iconoPlayWebinar {
         width: 4vw;
         height: 4vw;
+    }
+
+    .tituloGuias {
+        font-size: 2.5rem;
+    }
+
+    .btnVerMas {
+        padding: 1.3vw 5vw;
+    }
+
+    .embedGuia {
+        width: 45% !important;
+        height: 850px;
     }
 }
 
@@ -1183,6 +1230,15 @@ p,
     .guia {
         width: 18% !important;
     }
+
+    .btnVerMas {
+        padding: 1.3vw 4vw;
+    }
+
+    .embedGuia {
+        width: 40% !important;
+        height: 850px;
+    }
 }
 
 @media only screen and (min-width: 1650px) {
@@ -1235,6 +1291,10 @@ p,
     .iconoPlayWebinar {
         width: 3.5vw;
         height: 3.5vw;
+    }
+
+    .embedGuia {
+        width: 35% !important;
     }
 }
 
@@ -1307,6 +1367,10 @@ p,
 
     .guia {
         width: 274px !important;
+    }
+
+    .btnVerMas {
+        padding: 19px 58px;
     }
 
     .bannerDesktop {
