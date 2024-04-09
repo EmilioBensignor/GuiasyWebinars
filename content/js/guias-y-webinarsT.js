@@ -7,42 +7,42 @@ const sliderBannerDesktop = document.getElementById('sliderBannerDesktop');
 
 const webinars = [
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
   {
-    fondo: '../content/img/fondo.png',
+    fondo: '../content/img/guiasywebinars/fondo.png',
     texto: '¡Acompañanos a descubrir Costa Rica!',
     link: 'www.youtube.com'
   },
@@ -62,41 +62,41 @@ const optionsPais = [
 ];
 const guias = [
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
   {
-    fondo: "../content/img/guiaFondo.png",
+    fondo: "../content/img/guiasywebinars/guiaFondo.png",
     nombre: "Las Vegas",
   },
 ];
 const banners = [
-  "../content/img/banner.png",
-  "../content/img/banner.png",
-  "../content/img/banner.png",
-  "../content/img/banner.png",
+  "../content/img/guiasywebinars/banner.png",
+  "../content/img/guiasywebinars/banner.png",
+  "../content/img/guiasywebinars/banner.png",
+  "../content/img/guiasywebinars/banner.png",
 ];
 const bannersDekstop = [
-  "../content/img/bannerDesktop.png",
-  "../content/img/bannerDesktop.png",
-  "../content/img/bannerDesktop.png",
-  "../content/img/bannerDesktop.png",
+  "../content/img/guiasywebinars/bannerDesktop.png",
+  "../content/img/guiasywebinars/bannerDesktop.png",
+  "../content/img/guiasywebinars/bannerDesktop.png",
+  "../content/img/guiasywebinars/bannerDesktop.png",
 ];
 
 for (let region = 0; region < optionsRegion.length; region++) {
@@ -162,7 +162,7 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: "<img class='prev-webinar arrows-webinar slick-prev' src='../content/img/home/prev-arrow-oferta.svg'>",
+    prevArrow: "<img/guiasywebinars class='prev-webinar arrows-webinar slick-prev' src='../content/img/home/prev-arrow-oferta.svg'>",
     nextArrow: "<img class='next-webinar arrows-webinar slick-next' src='../content/img/home/next-arrow-webinar.svg'>",
     responsive: [
       { breakpoint: 1080, settings: { slidesToShow: 4, centerMode: !1, slidesToScroll: 1, variableWidth: !1 } },
