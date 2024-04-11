@@ -49,8 +49,7 @@
               <div class="slide slideWebinar">
                 <a href="<!--url-->" class="contenedorCardWebinar">
                   <div class="cardWebinar">
-                    <div class="cardWebinarImg"
-                      style="background-image: url('../content/img/guiasywebinars/webinars/<!--img-->')">
+                    <div class="cardWebinarImg" style="background-image: url('/images/webinars/<!--img-->')">
                       <div class="iconoPlayWebinar"></div>
                     </div>
                     <div class="contenidoCardWebinar">
@@ -95,13 +94,12 @@
         <div class="guias" id="contenedorGuias">
           <!--guia-->
           <button data-region="<!--region-->" data-pais="<!--pais-->" id="abrirModalGuia" class="guia">
-            <div class="imagenGuia"
-              style="background-image:url('../content/img/guiasywebinars/guias/fondos/<!--img-->')">
+            <div class="imagenGuia" style="background-image:url('/images/guias/<!--img-->')">
               <p>
                 <!--des-->
               </p>
             </div>
-            <div class="verGuia">
+            <div class="verGuia" onclick="verGuia('<!--pdf-->')">
               <p>Ver guía</p>
             </div>
           </button>
@@ -112,7 +110,7 @@
             <span class="cerrar">
               <img src="../content/img/shared/icons/cruz-cerrar-modal.svg" alt="Cerrar modal">
             </span>
-            <embed class="embedGuia" src="../content/img/guiasywebinars/guias/pdf/<!--pdf-->" type="application/pdf">
+            <embed id="embedPDF" class="embedGuia" src="" type="application/pdf">
           </div>
         </div>
         <button class="btnVerMas">Ver más</button>
@@ -120,14 +118,20 @@
     </section>
     <section class="seccionBanner">
       <div id="sliderBanner" class="sliderBanner">
+        <!--slidermobile-->
         <div class="slide">
-          <div class="banner" style="background-image: url('../content/img/guiasywebinars/banners/mobile/<!--img-->')"></div>
+          <div class="banner" style="background-image: url('images/slidermobile/<!--img-->')">
+          </div>
         </div>
+        <!--finslidermobile-->
       </div>
       <div id="sliderBannerDesktop" class="sliderBannerDesktop">
+        <!--sliderdesktop-->
         <div class="slide slideBannerDesktop">
-          <div class="bannerDesktop" style="background-image: url('../content/img/guiasywebinars/banners/desktop/<!--img-->')"></div>
+          <div class="bannerDesktop"
+            style="background-image: url('images/sliderdesktop/<!--img-->')"></div>
         </div>
+        <!--finsliderdesktop-->
       </div>
     </section>
   </main>

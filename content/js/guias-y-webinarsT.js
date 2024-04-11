@@ -42,6 +42,11 @@ $(document).ready(function () {
   $('.js-example-basic-single').select2();
 });
 
+function verGuia(pdf) {
+  $('#embedPDF').src= "/files/guias/" + pdf ;
+  $('modalGuia').show() ;   
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const modalGuia = document.getElementById('modalGuia');
   const abrirModalGuia = document.getElementById('abrirModalGuia');
