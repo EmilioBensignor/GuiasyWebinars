@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
   <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  
+
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
@@ -44,7 +44,25 @@
             </a>
           </div>
           <div class="contenedorWebinars">
-            <div id="sliderWebinars" class="sliderWebinars"></div>
+            <div id="sliderWebinars" class="sliderWebinars">
+              <!--webinar-->
+              <div class="slide slideWebinar">
+                <a href="<!--url-->" class="contenedorCardWebinar">
+                  <div class="cardWebinar">
+                    <div class="cardWebinarImg"
+                      style="background-image: url('../content/img/guiasywebinars/webinars/<!--img-->')">
+                      <div class="iconoPlayWebinar"></div>
+                    </div>
+                    <div class="contenidoCardWebinar">
+                      <p>
+                        <!--des-->
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--finwebinar-->
+            </div>
           </div>
         </div>
       </div>
@@ -55,28 +73,62 @@
         <div class="contenedorSelectWrapper">
           <div class="contenedorSelect">
             <p>Seleccionar región</p>
-            <select class="js-example-basic-single" name="region" id="selectRegion"></select>
+            <select class="js-example-basic-single" name="region" id="region">
+              <!--regiondesplegable-->
+              <option value="<!--id-->">
+                <!--des-->
+              </option>
+              <!--finregiondesplegable-->
+            </select>
           </div>
           <div class="contenedorSelect">
             <p>Seleccionar país</p>
-            <select class="js-example-basic-single" name="pais" id="selectPais"></select>
+            <select class="js-example-basic-single" name="pais" id="pais">
+              <!--paisdesplegable-->
+              <option value="<!--id-->">
+                <!--des-->
+              </option>
+              <!--finpaisdesplegable-->
+            </select>
           </div>
         </div>
-        <div class="guias" id="contenedorGuias"></div>
+        <div class="guias" id="contenedorGuias">
+          <!--guia-->
+          <button data-region="<!--region-->" data-pais="<!--pais-->" id="abrirModalGuia" class="guia">
+            <div class="imagenGuia"
+              style="background-image:url('../content/img/guiasywebinars/guias/fondos/<!--img-->')">
+              <p>
+                <!--des-->
+              </p>
+            </div>
+            <div class="verGuia">
+              <p>Ver guía</p>
+            </div>
+          </button>
+          <!--finguia-->
+        </div>
         <div id="modalGuia" class="modalGuia">
           <div class="modalGuiaContenido">
             <span class="cerrar">
               <img src="../content/img/shared/icons/cruz-cerrar-modal.svg" alt="Cerrar modal">
             </span>
-            <embed class="embedGuia" src="../content/img/guiasywebinars/Guia.pdf" type="application/pdf">
+            <embed class="embedGuia" src="../content/img/guiasywebinars/guias/pdf/<!--pdf-->" type="application/pdf">
           </div>
         </div>
         <button class="btnVerMas">Ver más</button>
       </div>
     </section>
     <section class="seccionBanner">
-      <div id="sliderBanner" class="sliderBanner"></div>
-      <div id="sliderBannerDesktop" class="sliderBannerDesktop"></div>
+      <div id="sliderBanner" class="sliderBanner">
+        <div class="slide">
+          <div class="banner" style="background-image: url('../content/img/guiasywebinars/banners/mobile/<!--img-->')"></div>
+        </div>
+      </div>
+      <div id="sliderBannerDesktop" class="sliderBannerDesktop">
+        <div class="slide slideBannerDesktop">
+          <div class="bannerDesktop" style="background-image: url('../content/img/guiasywebinars/banners/desktop/<!--img-->')"></div>
+        </div>
+      </div>
     </section>
   </main>
 
