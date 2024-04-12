@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 function verGuia(pdf) {
   $('#embedPDF').src= "/files/guias/" + pdf ;
-  $('modalGuia').show() ;   
+  $('#modalGuia').show() ;   
 }
 
 document.addEventListener('DOMContentLoaded', function () {
