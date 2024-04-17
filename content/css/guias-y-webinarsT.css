@@ -356,8 +356,13 @@ p,
     padding-bottom: 5vw;
 }
 
+#sliderBanner .slick-list{
+    width: calc(100% + 10px);
+    left: -35px;
+}
+
 .banner {
-    width: 95%;
+    width: 90%;
     height: 50vw;
     background-position: center;
     background-repeat: no-repeat;
