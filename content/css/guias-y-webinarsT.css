@@ -357,8 +357,8 @@ p,
 }
 
 #sliderBanner .slick-list{
-    width: calc(100% + 10px);
-    left: -35px;
+    width: calc(100% + 40px);
+    left: -27.5px;
 }
 
 .banner {
@@ -1045,9 +1045,14 @@ p,
         display: block !important;
     }
 
+    #sliderBannerDesktop .slick-list{
+        width: calc(100% + 105px);
+        left: -50spx;
+    }
+
     .bannerDesktop {
         width: 90%;
-        height: 25vw;
+        height: 15vw;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
