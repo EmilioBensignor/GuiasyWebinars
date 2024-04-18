@@ -39,7 +39,10 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  $('.js-example-basic-single').select2();
+  $('.selectRegion').select2();
+});
+$(document).ready(function () {
+  $('.selectPais').select2();
 });
 
 function verGuia(pdf) {
