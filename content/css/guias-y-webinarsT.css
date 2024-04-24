@@ -338,6 +338,7 @@ p,
 
 .cerrar {
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .cerrar img {
@@ -1300,10 +1301,6 @@ p,
         width: 380px !important;
     }
 
-    .guia {
-        width: 18% !important;
-    }
-
     .btnVerMas {
         padding: 1.3vw 4vw;
     }
@@ -1384,6 +1381,17 @@ p,
     .cardWebinar {
         margin: 0 0.6vw !important;
     }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+        width: 1.75vw !important;
+        height: 1.75vw !important;
+        right: 2.5% !important;
+    }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after{
+        top: 27.5% !important;
+        left: 22% !important;
+    }
 }
 
 @media only screen and (min-width: 1850px) {
@@ -1446,8 +1454,16 @@ p,
         height: 58px;
     }
 
+    .guias{
+        max-width: 1650px;
+    }
+
     .guia {
-        width: 274px !important;
+        width: 320px !important;
+    }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+        right: 2% !important;
     }
 
     .btnVerMas {
