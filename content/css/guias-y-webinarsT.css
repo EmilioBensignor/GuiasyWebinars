@@ -103,7 +103,7 @@ p,
 }
 
 .slideWebinar {
-    width: 8.5% !important;
+    width: 270px !important;
 }
 
 .slide {
@@ -211,22 +211,22 @@ p,
     margin: 0 0 3vw 3vw;
 }
 
-.select2-container {
+.contenedorSelect .select2-container {
     width: 100% !important;
 }
 
-.select2-container--default .select2-selection--single {
+.contenedorSelect .select2-container--default .select2-selection--single {
     height: auto !important;
     border: 1.5px solid #d3245c !important;
     border-radius: 9px !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #2e0049 !important;
     font-weight: 500;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 7vw !important;
     width: 7vw !important;
     top: 25% !important;
@@ -236,15 +236,15 @@ p,
     background-color: white !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
+.contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: #d3245c transparent transparent transparent !important;
 }
 
-.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+.contenedorSelect .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent #d3245c transparent !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow:after {
+.contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
     left: 25% !important;
     top: 25% !important;
     width: 3.5vw !important;
@@ -356,7 +356,7 @@ p,
     padding-bottom: 5vw;
 }
 
-#sliderBanner .slick-list{
+#sliderBanner .slick-list {
     width: calc(100% + 40px);
     left: -27.5px;
 }
@@ -427,13 +427,12 @@ p,
         height: 12vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         width: 6.5vw;
         height: 6.5vw;
         top: 20% !important;
         right: 3% !important;
     }
-
 
     .embedGuia {
         width: 100%;
@@ -474,19 +473,19 @@ p,
         height: 6vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 5vw !important;
         width: 5vw !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow:after {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
         height: 2.5vw !important;
         width: 2.5vw !important;
         top: 30% !important;
         left: 25% !important;
     }
 
-    .verGuia{
+    .verGuia {
         padding: 2.5vw 4vw;
     }
 
@@ -580,11 +579,11 @@ p,
         height: 6vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         padding: 2vw !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         top: 20% !important;
         right: 2% !important;
     }
@@ -601,7 +600,7 @@ p,
         border-radius: 0 0 22px 22px;
     }
 
-    .btnVerMas{
+    .btnVerMas {
         padding: 4vw 15vw;
     }
 
@@ -652,11 +651,11 @@ p,
         margin: 0 0 1vw 1vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         font-size: 1rem;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow:after {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
         left: 25% !important;
     }
 
@@ -696,7 +695,6 @@ p,
         gap: 1vw;
     }
 
-    .contenidoCardWebinar p,
     .verGuia p {
         font-size: 1.05rem;
     }
@@ -731,14 +729,14 @@ p,
         height: 7.5vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 4vw !important;
         width: 4vw !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow:after {
-        left: 30% !important;
-        top: 35% !important;
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
+        left: 25% !important;
+        top: 30% !important;
         width: 2vw !important;
         height: 2vw !important;
     }
@@ -792,18 +790,13 @@ p,
         height: 7vw;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         padding: 1.5vw !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 4vw !important;
         width: 4vw !important;
-    }
-
-    .select2-container--default .select2-selection--single .select2-selection__arrow:after{
-        left: 25% !important;
-        top: 17.5% !important;
     }
 
     .btnVerMas {
@@ -826,7 +819,6 @@ p,
         margin-bottom: 6.5vw;
     }
 
-    .contenidoCardWebinar p,
     .verGuia p {
         font-size: 1.1rem;
     }
@@ -910,7 +902,7 @@ p,
     }
 
     .slideWebinar {
-        width: 8.7% !important;
+        width: 285px !important;
         position: relative;
     }
 
@@ -954,7 +946,7 @@ p,
         margin-top: 0;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         padding: 0 !important;
     }
 
@@ -988,22 +980,22 @@ p,
         margin: 0;
     }
 
-    .select2-container--default .select2-selection--single{
+    .contenedorSelect .select2-container--default .select2-selection--single {
         padding: 0.5vw 1vw !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 2vw !important;
         width: 2vw !important;
-        top: 25% !important;
+        top: 22.5% !important;
         right: 4% !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         font-size: 1.2rem;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow:after{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
         height: 1vw !important;
         width: 1vw !important;
         top: 30% !important;
@@ -1045,9 +1037,9 @@ p,
         display: block !important;
     }
 
-    #sliderBannerDesktop .slick-list{
+    #sliderBannerDesktop .slick-list {
         width: calc(100% + 105px);
-        left: -50spx;
+        left: -50px;
     }
 
     .bannerDesktop {
@@ -1088,25 +1080,25 @@ p,
 
 @media only screen and (min-width: 1100px) {
     .slideWebinar {
-        width: 8.9% !important;
+        width: 290px !important;
     }
 }
 
 @media only screen and (min-width: 1150px) {
     .slideWebinar {
-        width: 9.25% !important;
+        width: 300px !important;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .slideWebinar {
-        width: 9.6% !important;
+        width: 310px !important;
     }
 }
 
 @media only screen and (min-width: 1250px) {
     .slideWebinar {
-        width: 10% !important;
+        width: 320px !important;
     }
 
     .iconoPlayWebinar {
@@ -1148,12 +1140,18 @@ p,
     }
 
     .slideWebinar {
-        width: 9.5% !important;
+        width: 325px !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
-        width: 2.5vw !important;
-        height: 2.5vw !important;
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
+        width: 2vw !important;
+        height: 2vw !important;
+        top: 20% !important;
+    }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
+        top: 30% !important;
+        left: 25% !important;
     }
 
     .guia {
@@ -1168,7 +1166,7 @@ p,
 
 @media only screen and (min-width: 1300px) {
     .slideWebinar {
-        width: 9.6% !important;
+        width: 330px !important;
     }
 
     .cardWebinarImg {
@@ -1178,13 +1176,13 @@ p,
 
 @media only screen and (min-width: 1350px) {
     .slideWebinar {
-        width: 9.9% !important;
+        width: 340px !important;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     .slideWebinar {
-        width: 10.25% !important;
+        width: 350px !important;
     }
 }
 
@@ -1228,6 +1226,10 @@ p,
         font-size: 2.5rem;
     }
 
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+        top: 17.5% !important;
+    }
+
     .btnVerMas {
         padding: 1.3vw 5vw;
     }
@@ -1240,13 +1242,13 @@ p,
 
 @media only screen and (min-width: 1450px) {
     .slideWebinar {
-        width: 10.35% !important;
+        width: 350px !important;
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .slideWebinar {
-        width: 10.6% !important;
+        width: 360px !important;
     }
 
     .cardWebinarImg {
@@ -1256,7 +1258,7 @@ p,
 
 @media only screen and (min-width: 1550px) {
     .slideWebinar {
-        width: 10.9% !important;
+        width: 370px !important;
     }
 }
 
@@ -1282,8 +1284,12 @@ p,
         font-size: 1.5rem;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered {
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__rendered {
         font-size: 1.35rem;
+    }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+        top: 15% !important;
     }
 
     .btnWebinar {
@@ -1291,12 +1297,7 @@ p,
     }
 
     .slideWebinar {
-        width: 10.85% !important;
-    }
-
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
-        width: 2vw !important;
-        height: 2vw !important;
+        width: 380px !important;
     }
 
     .guia {
@@ -1315,7 +1316,7 @@ p,
 
 @media only screen and (min-width: 1650px) {
     .slideWebinar {
-        width: 11.15% !important;
+        width: 390px !important;
     }
 }
 
@@ -1363,6 +1364,11 @@ p,
     .iconoPlayWebinar {
         width: 3.5vw;
         height: 3.5vw;
+    }
+
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+        top: 12.5% !important;
+        right: 3% !important;
     }
 
     .embedGuia {

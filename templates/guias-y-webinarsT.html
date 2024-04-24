@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="robots" content="index,follow">
+  <meta name="title" content="<!--txt_met_tit-->">
+  <meta name="description" content="<!--txt_met_des-->">
+  <meta name="keywords" content="<!--txt_met_kwd-->">
+  <title>Guias y Webinars</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="content/css/libs/libs-reducidas.css" />
+  <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
+  <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+
+  <script defer type="text/javascript" src="content/js/libs/libs-reducidas.js"></script>
+  <script defer src="https://webchat.woztell.com/sdk.js"></script>
+</head>
+
+<body>
+  <!--header-->
+  <main>
+    <section id="webinars">
+      <div class="fondoWebinars">
+        <div class="contenidoWebinars">
+          <div class="headerWebinars">
+            <h2 class="tituloWebinars">Todo sobre tus destinos favoritos</h2>
+            <p class="subtituloWebinars">Explora el mundo en nuestros
+              eventos online junto a nuestros Expertos.</p>
+            <a href="https://www.youtube.com/watch?v=wEww4Rricz0&list=PLH5EBtMaI4cOB1QGuvEc-A_w0VlLx8fY2"
+              title="Ver webinars" class="btnWebinar">
+              <div class="iconoPlay iconoPlayEventos"></div>
+              Ver todos los eventos
+            </a>
+          </div>
+          <div class="contenedorWebinars">
+            <div id="sliderWebinars" class="sliderWebinars">
+              <!--webinar-->
+              <div class="slide slideWebinar">
+                <a href="<!--url-->" class="contenedorCardWebinar">
+                  <div class="cardWebinar">
+                    <div class="cardWebinarImg" style="background-image: url('/images/webinars/<!--img-->')">
+                      <div class="iconoPlayWebinar"></div>
+                    </div>
+                    <div class="contenidoCardWebinar">
+                      <p>
+                        <!--des-->
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--finwebinar-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seccionGuias">
+      <p class="tituloGuias">Guías del viajero Experto</p>
+      <div class="regionPais">
+        <div class="contenedorSelectWrapper">
+          <div class="contenedorSelect">
+            <p>Seleccionar región</p>
+            <select class="selectRegion" name="region" id="region" onchange="filtraPorRegion();">
+              <option value="">Todas</option>
+              <!--regiondesplegable-->
+              <option value="<!--id-->">
+                <!--des-->
+              </option>
+              <!--finregiondesplegable-->
+            </select>
+          </div>
+          <div class="contenedorSelect">
+            <p>Seleccionar país</p>
+            <select class="selectPais" name="pais" id="pais" onchange="filtraPorPais();">
+            	<option value="">Todos</option>
+              <!--paisdesplegable-->
+              <option value="<!--id-->">
+                <!--des-->
+              </option>
+              <!--finpaisdesplegable-->
+            </select>
+          </div>
+        </div>
+        <div class="guias" id="contenedorGuias">
+          <!--guia-->
+          <button data-region="<!--region-->" data-pais="<!--pais-->" id="abrirModalGuia" class="guia">
+            <div class="imagenGuia" style="background-image:url('/images/guias/<!--img-->')">
+              <p>
+                <!--des-->
+              </p>
+            </div>
+            <div class="verGuia" onclick="verGuia('<!--fil-->')">
+              <p>Ver guía</p>
+            </div>
+          </button>
+          <!--finguia-->
+        </div>
+        <div id="modalGuia" class="modalGuia">
+          <div class="modalGuiaContenido">
+            <span class="cerrar">
+              <img src="/content/img/shared/icons/cruz-cerrar-modal.svg" alt="Cerrar modal">
+            </span>
+            <embed id="embedPDF" class="embedGuia" src="" type="application/pdf">
+          </div>
+        </div>
+        <button class="btnVerMas">Ver más</button>
+      </div>
+    </section>
+    <section class="seccionBanner">
+      <div id="sliderBanner" class="sliderBanner">
+        <div class="slide slideMobile">
+          <a class="banner" style="background-image: url('/content/img/guiasywebinars/ofertasMobile.webp')"
+            href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4" target="_blank"></a>
+        </div>
+        <div class="slide slideMobile">
+          <a class="banner" style="background-image: url('/content/img/guiasywebinars/ventajasMobile.webp')"
+            href="https://tourexperto.com/ventajas.html" target="_blank"></a>
+        </div>
+      </div>
+      <div id="sliderBannerDesktop" class="sliderBannerDesktop">
+        <div class="slide slideBannerDesktop">
+          <a class="bannerDesktop" style="background-image: url('/content/img/guiasywebinars/ofertasDesktop.webp')"
+            href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4" target="_blank"></a>
+        </div>
+        <div class="slide slideBannerDesktop">
+          <a class="bannerDesktop" style="background-image: url('/content/img/guiasywebinars/ventajasDesktop.webp')"
+            href="https://tourexperto.com/ventajas.html" target="_blank"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <frameset>
+    <frame id="view_phone"></frame>
+  </frameset>
+  <footer id="footer" class="footer-pagina"></footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script defer type="text/javascript" src="/content/js/guias-y-webinarsT.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script>
+    var watcherPagina = setInterval(function () {
+      if (window.jQuery) {
+        clearInterval(watcherPagina);
+
+        window.onload = function () {
+          onloadHeader();
+
+          $(window).resize(function () {
+            resizeHeader();
+          })
+
+          $('a.contacto-wapp').click(function (e) {
+            e.preventDefault();
+            if (screen.width < 520) {
+              window.open($('a.contacto-wapp').attr('href'), 'view_phone', "width=1,height=1");
+            } else {
+              window.open($('a.contacto-wapp').attr('href'), 'view_phone', "width=500,height=500");
+            }
+          });
+        }   //fin window.onload
+
+      }
+    }); //fin watcher jquery
+
+
+	function filtraPorRegion() {
+		var val = region.value ;
+		if (val == "" && pais.value == "") {
+			$('.guia').show() ;
+		} else {
+			if (val != "") {
+				$('.guia').hide() ;
+				$('.guia').filter('[data-region=' + val + ']').show() ;
+				$('#pais').val('') ;
+				$('#pais').trigger('change') ;
+			}
+		}
+	}
+
+	function filtraPorPais() {
+		var val = pais.value ;
+		if (val == "" && region.value == "") {
+			$('.guia').show() ;
+		} else {
+			if (val != "") {
+				$('.guia').hide() ;
+				$('.guia').filter('[data-pais=' + val + ']').show() ;
+				$('#region').val('') ;
+				$('#region').trigger('change') ;
+			}
+		}
+	}
+
+  </script>
+</body>
+
+</html>
