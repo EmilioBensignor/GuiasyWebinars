@@ -46,7 +46,7 @@ $(document).ready(function () {
 });
 
 function verGuia(pdf) {
-  $('#embedPDF').src= "/files/guias/" + pdf ;
+  $('#embedPDF')[0].src= "/files/guias/" + pdf ;
   $('#modalGuia').show() ;   
 }
 

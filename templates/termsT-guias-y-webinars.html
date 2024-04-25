@@ -173,6 +173,108 @@
       }
     }); //fin watcher jquery
   </script>
+
+  <script>
+    var filas = 1; // como empieza llamando a verMas, ya de prepo le suma 1 y quedan 2
+    var cuantosporfila = 4;
+
+    function verMas() {
+      // antes de sumar uno en paginas, tengo que ver si realmente mostraria algo.
+      var maxguias = 0;
+      if (region.value == "" && pais.value == "") {
+        maxguias = $('.guia').length;
+      } else {
+        $('.guia').each(function (i) {
+          if ($(this).data('region') == region.value || $(this).data('pais') == pais.value) {
+            maxguias++;
+          }
+        });
+      }
+
+      if (filas * cuantosporfila < maxguias) {
+        filas = filas + 1;
+        if (region.value != "") {
+          filtraPorRegion();
+        } else if (pais.value != "") {
+          filtraPorPais();
+        } else {
+          // tengo que mostrar todos 
+          mostrarPaginas();
+        }
+      }
+    }
+
+    verMas();
+
+    function mostrarPaginas() {
+      var haymas = 0;
+      $('.guia').each(function (i) {
+        if (i < filas * cuantosporfila) {
+          $(this).show();
+        } else {
+          haymas = 1;
+        }
+      });
+      if (haymas) {
+        $('.btnVerMas').show();
+      } else {
+        $('.btnVerMas').hide();
+      }
+    }
+
+    function filtraPorRegion() {
+      var val = region.value;
+      if (val == "" && pais.value == "") {
+        mostrarPaginas();
+      } else {
+        if (val != "") {
+          $('.guia').hide();
+          var haymas = 0;
+          $('.guia').filter('[data-region=' + val + ']').each(function (i) {
+            if (i < filas * cuantosporfila) {
+              $(this).show();
+            } else {
+              haymas = 1;
+            }
+          });
+          if (haymas) {
+            $('.btnVerMas').show();
+          } else {
+            $('.btnVerMas').hide();
+          }
+
+          $('#pais').val('');
+          $('#pais').trigger('change');
+        }
+      }
+    }
+
+    function filtraPorPais() {
+      var val = pais.value;
+      if (val == "" && region.value == "") {
+        mostrarPaginas();
+      } else {
+        if (val != "") {
+          $('.guia').hide();
+          var haymas = 0;
+          $('.guia').filter('[data-pais=' + val + ']').each(function (i) {
+            if (i < filas * cuantosporfila) {
+              $(this).show();
+            } else {
+              haymas = 1;
+            }
+          });
+          if (haymas) {
+            $('.btnVerMas').show();
+          } else {
+            $('.btnVerMas').hide();
+          }
+          $('#region').val('');
+          $('#region').trigger('change');
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

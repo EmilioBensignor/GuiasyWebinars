@@ -733,6 +733,7 @@ p,
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 4vw !important;
         width: 4vw !important;
+        top: 20% !important;
     }
 
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
@@ -798,6 +799,7 @@ p,
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         height: 4vw !important;
         width: 4vw !important;
+        top: 15% !important;
     }
 
     .btnVerMas {
@@ -1227,7 +1229,7 @@ p,
         font-size: 2.5rem;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         top: 17.5% !important;
     }
 
@@ -1289,7 +1291,7 @@ p,
         font-size: 1.35rem;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         top: 15% !important;
     }
 
@@ -1363,7 +1365,7 @@ p,
         height: 3.5vw;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         top: 12.5% !important;
         right: 3% !important;
     }
@@ -1382,13 +1384,13 @@ p,
         margin: 0 0.6vw !important;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         width: 1.75vw !important;
         height: 1.75vw !important;
         right: 2.5% !important;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
         top: 27.5% !important;
         left: 22% !important;
     }
@@ -1454,7 +1456,7 @@ p,
         height: 58px;
     }
 
-    .guias{
+    .guias {
         max-width: 1650px;
     }
 
@@ -1462,7 +1464,7 @@ p,
         width: 320px !important;
     }
 
-    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+    .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         right: 2% !important;
     }
 
