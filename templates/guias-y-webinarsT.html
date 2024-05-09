@@ -15,9 +15,9 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" type="text/css" href="content/css/libs/libs-reducidas.css" />
-  <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
-  <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
+  <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css?v=1.1">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
@@ -95,14 +95,14 @@
         </div>
         <div class="guias" id="contenedorGuias">
           <!--guia-->
-          <button data-region="<!--region-->" data-pais="<!--pais-->" id="abrirModalGuia" class="guia"
+          <button onclick="verGuia('<!--fil-->')" data-region="<!--region-->" data-pais="<!--pais-->" id="abrirModalGuia" class="guia"
             style="display:none;">
             <div class="imagenGuia" style="background-image:url('/images/guias/<!--img-->')">
               <p>
                 <!--des-->
               </p>
             </div>
-            <div class="verGuia" onclick="verGuia('<!--fil-->')">
+            <div class="verGuia">
               <p>Ver guía</p>
             </div>
           </button>

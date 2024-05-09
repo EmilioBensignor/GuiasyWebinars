@@ -1,7 +1,3 @@
-* {
-    font-family: "Raleway", sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -9,11 +5,15 @@ body {
     list-style: none;
 }
 
+main, main button {
+    font-family: "Raleway", sans-serif;
+}
+
 h2 {
     font-size: 1.8rem;
 }
 
-p,
+main p,
 .subtituloWebinars,
 .btnWebinar {
     font-size: 1rem;
@@ -102,10 +102,6 @@ p,
     margin: 0 !important;
 }
 
-.slideWebinar {
-    width: 270px !important;
-}
-
 .slide {
     display: flex !important;
     flex-direction: column;
@@ -180,7 +176,7 @@ p,
 
 .tituloGuias {
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     color: #6c58fe;
 }
 
@@ -323,6 +319,7 @@ p,
 
 .modalGuiaContenido {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,7 +330,7 @@ p,
 
 .embedGuia {
     width: 100%;
-    height: 450px;
+    height: 100%;
 }
 
 .cerrar {
@@ -398,6 +395,8 @@ p,
 
     .cardWebinar {
         padding: 2vw;
+        width: 63vw;
+        height: 52vw;
     }
 
     .cardWebinarImg {
@@ -417,6 +416,7 @@ p,
     .cardWebinar {
         padding: 2vw !important;
         margin: 0 1.5vw !important;
+        height: 48vw;
     }
 
     .cardWebinarImg {
@@ -428,6 +428,10 @@ p,
         height: 12vw;
     }
 
+    .tituloGuias{
+        margin-top: 4%;
+    }
+
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         width: 6.5vw;
         height: 6.5vw;
@@ -435,9 +439,12 @@ p,
         right: 3% !important;
     }
 
-    .embedGuia {
-        width: 100%;
-        height: 500px;
+    .modalGuiaContenido{
+        flex-direction: row-reverse;
+    }
+
+    .cerrar{
+        align-self: flex-start;
     }
 }
 
@@ -453,6 +460,10 @@ p,
 
     .btnWebinar {
         padding: 2.5vw 6vw;
+    }
+
+    .cardWebinar{
+        height: 46vw;
     }
 
     .cardWebinarImg {
@@ -504,9 +515,12 @@ p,
         margin: 0 1.5vw !important;
     }
 
+    .tituloGuias{
+        margin-top: 5%;
+    }
+
     .embedGuia {
         width: 75% !important;
-        height: 600px;
     }
 }
 
@@ -518,6 +532,7 @@ p,
 
     .cardWebinar {
         margin: 0 2vw !important;
+        height: 37vw;
     }
 
     .cardWebinarImg {
@@ -530,7 +545,7 @@ p,
         font-size: 2rem;
     }
 
-    p,
+    main p,
     .subtituloWebinars,
     .btnWebinar {
         font-size: 1.1rem;
@@ -551,6 +566,7 @@ p,
 
     .cardWebinar {
         margin: 0 1.5vw !important;
+        height: 33vw;
     }
 
     .cardWebinarImg {
@@ -614,6 +630,10 @@ p,
     .contenidoWebinars {
         margin-bottom: 10vw;
     }
+
+    .cardWebinar{
+        height: 30vw;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -627,6 +647,7 @@ p,
 
     .cardWebinar {
         padding: 1vw !important;
+        height: 26vw;
     }
 
     .cardWebinarImg {
@@ -686,7 +707,7 @@ p,
         font-size: 2.2rem;
     }
 
-    p,
+    main p,
     .subtituloWebinars,
     .btnWebinar {
         font-size: 1.2rem;
@@ -715,6 +736,7 @@ p,
 
     .cardWebinar {
         padding: 1vw !important;
+        height: 21vw;
     }
 
     .cardWebinarImg {
@@ -765,7 +787,6 @@ p,
 
     .embedGuia {
         width: 65% !important;
-        height: 775px;
     }
 }
 
@@ -812,10 +833,15 @@ p,
         font-size: 2.3rem;
     }
 
-    p,
+    main p,
     .subtituloWebinars,
     .btnWebinar {
         font-size: 1.3rem;
+    }
+
+    .contenedorCardWebinar p{
+        font-size: 1.1rem !important;
+        line-height: 1.2;
     }
 
     .contenidoWebinars {
@@ -828,6 +854,10 @@ p,
 
     .btnWebinar {
         padding: 1vw 3.5vw;
+    }
+
+    .cardWebinar{
+        height: 18vw;
     }
 
     .cardWebinarImg {
@@ -905,7 +935,6 @@ p,
     }
 
     .slideWebinar {
-        width: 285px !important;
         position: relative;
     }
 
@@ -915,6 +944,8 @@ p,
 
     .cardWebinar {
         padding: 0.75vw !important;
+        width: 20vw;
+        height: 20vw;
     }
 
     .cardWebinarImg {
@@ -1025,6 +1056,7 @@ p,
     }
 
     .btnVerMas {
+        font-size: 1.3rem;
         padding: 1.5vw 5vw;
     }
 
@@ -1077,33 +1109,16 @@ p,
 
     .embedGuia {
         width: 55% !important;
-        height: 800px;
     }
 }
 
-@media only screen and (min-width: 1100px) {
-    .slideWebinar {
-        width: 290px !important;
-    }
-}
-
-@media only screen and (min-width: 1150px) {
-    .slideWebinar {
-        width: 300px !important;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .slideWebinar {
-        width: 310px !important;
+@media only screen and (min-width: 1150px){
+    .cardWebinar{
+        height: 19vw;
     }
 }
 
 @media only screen and (min-width: 1250px) {
-    .slideWebinar {
-        width: 320px !important;
-    }
-
     .iconoPlayWebinar {
         width: 4vw;
         height: 4vw;
@@ -1124,7 +1139,14 @@ p,
         padding: 0.75vw 2.5vw;
     }
 
-    .contenidoCardWebinar p,
+    .contenidoCardWebinar p {
+        font-size: 1.1rem;
+    }
+
+    .cardWebinar{
+        height: 17vw;
+    }
+
     .verGuia p {
         font-size: 1.2rem;
     }
@@ -1133,17 +1155,13 @@ p,
         font-size: 2.25rem;
     }
 
-    p {
+    main p {
         font-size: 1.4rem;
     }
 
     .iconoPlayEventos {
         width: 3vw;
         height: 3vw;
-    }
-
-    .slideWebinar {
-        width: 325px !important;
     }
 
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1163,29 +1181,16 @@ p,
 
     .embedGuia {
         width: 50% !important;
-        height: 850px;
     }
 }
 
 @media only screen and (min-width: 1300px) {
-    .slideWebinar {
-        width: 330px !important;
-    }
-
     .cardWebinarImg {
         height: 10.5vw !important;
     }
-}
 
-@media only screen and (min-width: 1350px) {
-    .slideWebinar {
-        width: 340px !important;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .slideWebinar {
-        width: 350px !important;
+    .cardWebinar{
+        height: 16vw;
     }
 }
 
@@ -1203,7 +1208,7 @@ p,
         font-size: 1.25rem;
     }
 
-    p {
+    main p {
         font-size: 1.45rem;
     }
 
@@ -1239,29 +1244,16 @@ p,
 
     .embedGuia {
         width: 45% !important;
-        height: 850px;
-    }
-}
-
-@media only screen and (min-width: 1450px) {
-    .slideWebinar {
-        width: 350px !important;
     }
 }
 
 @media only screen and (min-width: 1500px) {
-    .slideWebinar {
-        width: 360px !important;
-    }
-
     .cardWebinarImg {
         height: 9.5vw !important;
     }
-}
 
-@media only screen and (min-width: 1550px) {
-    .slideWebinar {
-        width: 370px !important;
+    .cardWebinar{
+        height: 14.5vw;
     }
 }
 
@@ -1283,7 +1275,7 @@ p,
         font-size: 2.7rem;
     }
 
-    p {
+    main p {
         font-size: 1.5rem;
     }
 
@@ -1299,29 +1291,12 @@ p,
         padding: 0.75vw 1.5vw;
     }
 
-    .slideWebinar {
-        width: 380px !important;
-    }
-
     .btnVerMas {
         padding: 1.3vw 4vw;
     }
 
     .embedGuia {
         width: 40% !important;
-        height: 850px;
-    }
-}
-
-@media only screen and (min-width: 1650px) {
-    .slideWebinar {
-        width: 390px !important;
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .slideWebinar {
-        width: 395px !important;
     }
 }
 
@@ -1339,17 +1314,13 @@ p,
         font-size: 1.3rem;
     }
 
-    p {
+    main p {
         font-size: 1.5rem;
     }
 
     .btnWebinar {
         font-size: 1.5rem;
         padding: 0.6vw 1.3vw;
-    }
-
-    .slideWebinar {
-        width: 405px !important;
     }
 
     .cardWebinar {
@@ -1376,12 +1347,9 @@ p,
 }
 
 @media only screen and (min-width: 1800px) {
-    .slideWebinar {
-        width: 420px !important;
-    }
-
     .cardWebinar {
         margin: 0 0.6vw !important;
+        height: 14vw;
     }
 
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1393,18 +1361,6 @@ p,
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow:after {
         top: 27.5% !important;
         left: 22% !important;
-    }
-}
-
-@media only screen and (min-width: 1850px) {
-    .slideWebinar {
-        width: 430px !important;
-    }
-}
-
-@media only screen and (min-width: 1900px) {
-    .slideWebinar {
-        width: 440px !important;
     }
 }
 
@@ -1428,10 +1384,6 @@ p,
 
     #webinars {
         max-width: 1920px;
-    }
-
-    .slideWebinar {
-        width: 445px !important;
     }
 
     .btnWebinar {
