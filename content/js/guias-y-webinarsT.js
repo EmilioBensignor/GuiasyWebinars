@@ -46,8 +46,19 @@ $(document).ready(function () {
 });
 
 function verGuia(pdf) {
-  $('#embedPDF')[0].src= "/files/guias/" + pdf ;
-  $('#modalGuia').show() ;   
+  let url = "/files/guias/" + pdf;
+  const modalGuia = document.getElementById("modalGuia");
+  const cerrarModal = document.getElementById("cerrarModal");
+  if (screen.width < 1080) {
+    $('#modalGuia').show()
+    modalGuia.style.background = "none";
+    cerrarModal.style.display = "none";
+    setTimeout(() => $('#modalGuia').hide(), 500);
+    window.location.href = url;
+  } else {
+    $('#embedPDF')[0].src = url;
+    $('#modalGuia').show();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {

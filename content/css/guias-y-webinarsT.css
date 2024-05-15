@@ -252,7 +252,7 @@ main p,
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: 1rem;
     margin-top: 5vw;
 }
 
@@ -261,6 +261,7 @@ main p,
     cursor: pointer;
     border: none;
     background: none;
+    padding: 0;
 }
 
 .imagenGuia {
@@ -323,7 +324,7 @@ main p,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 3vw;
     padding: 20px;
 }
@@ -395,6 +396,8 @@ main p,
 
     .cardWebinar {
         padding: 2vw;
+        width: 63vw;
+        height: 52vw;
     }
 
     .cardWebinarImg {
@@ -414,6 +417,7 @@ main p,
     .cardWebinar {
         padding: 2vw !important;
         margin: 0 1.5vw !important;
+        height: 48vw;
     }
 
     .cardWebinarImg {
@@ -425,11 +429,23 @@ main p,
         height: 12vw;
     }
 
+    .tituloGuias{
+        margin-top: 4%;
+    }
+
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
         width: 6.5vw;
         height: 6.5vw;
         top: 20% !important;
         right: 3% !important;
+    }
+
+    .modalGuiaContenido{
+        flex-direction: row-reverse;
+    }
+
+    .cerrar{
+        align-self: flex-start;
     }
 }
 
@@ -445,6 +461,10 @@ main p,
 
     .btnWebinar {
         padding: 2.5vw 6vw;
+    }
+
+    .cardWebinar{
+        height: 46vw;
     }
 
     .cardWebinarImg {
@@ -496,6 +516,10 @@ main p,
         margin: 0 1.5vw !important;
     }
 
+    .tituloGuias{
+        margin-top: 5%;
+    }
+
     .embedGuia {
         width: 75% !important;
     }
@@ -509,6 +533,7 @@ main p,
 
     .cardWebinar {
         margin: 0 2vw !important;
+        height: 37vw;
     }
 
     .cardWebinarImg {
@@ -542,6 +567,7 @@ main p,
 
     .cardWebinar {
         margin: 0 1.5vw !important;
+        height: 33vw;
     }
 
     .cardWebinarImg {
@@ -605,6 +631,10 @@ main p,
     .contenidoWebinars {
         margin-bottom: 10vw;
     }
+
+    .cardWebinar{
+        height: 30vw;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -618,6 +648,7 @@ main p,
 
     .cardWebinar {
         padding: 1vw !important;
+        height: 26vw;
     }
 
     .cardWebinarImg {
@@ -706,6 +737,7 @@ main p,
 
     .cardWebinar {
         padding: 1vw !important;
+        height: 21vw;
     }
 
     .cardWebinarImg {
@@ -825,6 +857,10 @@ main p,
         padding: 1vw 3.5vw;
     }
 
+    .cardWebinar{
+        height: 18vw;
+    }
+
     .cardWebinarImg {
         height: 12.5vw !important;
     }
@@ -909,6 +945,8 @@ main p,
 
     .cardWebinar {
         padding: 0.75vw !important;
+        width: 20vw;
+        height: 20vw;
     }
 
     .cardWebinarImg {
@@ -1075,6 +1113,12 @@ main p,
     }
 }
 
+@media only screen and (min-width: 1150px){
+    .cardWebinar{
+        height: 19vw;
+    }
+}
+
 @media only screen and (min-width: 1250px) {
     .iconoPlayWebinar {
         width: 4vw;
@@ -1098,6 +1142,10 @@ main p,
 
     .contenidoCardWebinar p {
         font-size: 1.1rem;
+    }
+
+    .cardWebinar{
+        height: 17vw;
     }
 
     .verGuia p {
@@ -1140,6 +1188,10 @@ main p,
 @media only screen and (min-width: 1300px) {
     .cardWebinarImg {
         height: 10.5vw !important;
+    }
+
+    .cardWebinar{
+        height: 16vw;
     }
 }
 
@@ -1199,6 +1251,10 @@ main p,
 @media only screen and (min-width: 1500px) {
     .cardWebinarImg {
         height: 9.5vw !important;
+    }
+
+    .cardWebinar{
+        height: 14.5vw;
     }
 }
 
@@ -1294,6 +1350,7 @@ main p,
 @media only screen and (min-width: 1800px) {
     .cardWebinar {
         margin: 0 0.6vw !important;
+        height: 14vw;
     }
 
     .contenedorSelect .select2-container--default .select2-selection--single .select2-selection__arrow {
