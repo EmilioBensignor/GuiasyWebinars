@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="content/css/libs/libs-reducidas.css" />
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
-  <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css?v=1.1">
+  <link rel="stylesheet" href="/content/css/guias-y-webinarsT.css?v=1.2">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
@@ -110,7 +110,7 @@
         </div>
         <div id="modalGuia" class="modalGuia">
           <div class="modalGuiaContenido">
-            <span class="cerrar">
+            <span class="cerrar" id="cerrarModal">
               <img src="/content/img/shared/icons/cruz-cerrar-modal.svg" alt="Cerrar modal">
             </span>
             <embed id="embedPDF" class="embedGuia" src="" type="application/pdf">
@@ -122,22 +122,20 @@
     <section class="seccionBanner">
       <div id="sliderBanner" class="sliderBanner">
         <div class="slide slideMobile">
-          <a class="banner" style="background-image: url('/content/img/guiasywebinars/ofertasMobile.webp')"
-            href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4" target="_blank"></a>
+          <a class="banner banner1" href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4"
+            target="_blank"></a>
         </div>
         <div class="slide slideMobile">
-          <a class="banner" style="background-image: url('/content/img/guiasywebinars/ventajasMobile.webp')"
-            href="https://tourexperto.com/ventajas.html" target="_blank"></a>
+          <a class="banner banner2" href="https://tourexperto.com/ventajas.html" target="_blank"></a>
         </div>
       </div>
       <div id="sliderBannerDesktop" class="sliderBannerDesktop">
         <div class="slide slideBannerDesktop">
-          <a class="bannerDesktop" style="background-image: url('/content/img/guiasywebinars/ofertasDesktop.webp')"
+          <a class="bannerDesktop bannerDesktop1"
             href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4" target="_blank"></a>
         </div>
         <div class="slide slideBannerDesktop">
-          <a class="bannerDesktop" style="background-image: url('/content/img/guiasywebinars/ventajasDesktop.webp')"
-            href="https://tourexperto.com/ventajas.html" target="_blank"></a>
+          <a class="bannerDesktop bannerDesktop2" href="https://tourexperto.com/ventajas.html" target="_blank"></a>
         </div>
       </div>
     </section>
@@ -149,7 +147,7 @@
   <footer id="footer" class="footer-pagina"></footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script defer type="text/javascript" src="/content/js/guias-y-webinarsT.js"></script>
+  <script defer type="text/javascript" src="/content/js/guias-y-webinarsT.js?v=1.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script>
     var watcherPagina = setInterval(function () {
